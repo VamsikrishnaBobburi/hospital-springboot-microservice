@@ -1,0 +1,16 @@
+
+.container{
+    height: auto;
+    background-color: #107b10c4;
+}
+
+.bg{background-image: url(E:\frontend\Angular-frontend\photo1.jpeg);
+
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

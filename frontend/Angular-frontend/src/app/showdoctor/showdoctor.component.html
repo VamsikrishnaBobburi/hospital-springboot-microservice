@@ -1,0 +1,56 @@
+<div class="container">
+  <form class="form-inline mt-1">
+    <div class="mb-1">
+      <label for="doctor"><b> Doctor Name Search</b></label>
+      <select class="form-control" [(ngModel)]="doc.name" name="name">
+        <option [value]="docs.name" *ngFor="let docs of doctor">{{docs.name}}</option>
+      </select>
+    </div>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-normal my-4 " type="submit" (click)="showDoctorDetails()"><i
+          class="fa fa-search"> </i> <b>search</b></button>
+    </div>
+  </form>
+</div>
+<!--  -->
+<div class="">
+  <div class="text-center">
+  <b>Doctor Information Details</b>
+  </div>
+  <div class="card-body" *ngIf="doc!=null">
+    <div class="" id="page-content">
+      <div class="padding">
+        <div class="">
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="col-sm-4 bg-c-lite-green user-profile">
+                  <div class="card-block text-center text-white">
+                    <div class="m-b-5">
+                     <label for="">Doctor Name:</label>
+                    </div>
+                    <h6 class="f-w-600 text-uppercase">{{doc.name}}</h6>
+                    
+                    <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-5"></i>
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <div class="card-block">
+                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                    <div class="row">
+                     
+                    </div>
+                    <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Patient Attended: {{doc.patient_count}}</h6>
+      
+                  
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->

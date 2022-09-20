@@ -1,0 +1,23 @@
+/*.bg{
+    background-image: url(E:\frontend\Angular-frontend\photo3.JPG);
+    height: 900px;
+}
+.container{
+    height: auto;
+    background-color: #1f151d;
+}*/
+.contact-image{
+    width:auto;
+    height: 10px;
+    border-radius: 20px;
+}  
+.bg{background-image: url(E:\frontend\Angular-frontend\photo3.JPG);
+
+  /*Full height */
+  height: 100%; 
+
+ /*Center and scale the image nicely*/ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

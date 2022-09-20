@@ -1,0 +1,12 @@
+
+
+.bg{background-image: url(E:\frontend\Angular-frontend\photo2.jpg);
+
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
