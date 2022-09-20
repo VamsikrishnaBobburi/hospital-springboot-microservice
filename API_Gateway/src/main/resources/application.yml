@@ -1,0 +1,21 @@
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: API_GATEWAY
+    
+    
+  cloud:
+    gateway:
+      routes:
+      - id: Hospital-Details
+        uri:
+          lb://Hospital-Details
+        predicates:
+        - Path=/doctor/**
+        
+     
+        
+        
+          
